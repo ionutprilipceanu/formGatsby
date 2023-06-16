@@ -3,15 +3,8 @@ import React from "react"
 const FormTemp = () => {
   return (
     <div>
-      <form
-        method="post"
-        name="Contact Form 2"
-        action="/thank-you/"
-        data-netlify-recaptcha="true"
-        netlify-honeypot="hpfield"
-        data-netlify="true"
-      >
-        <input type="hidden" name="hpfield" />
+      <form name="Contact Form" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="Contact Form" />
         <p>
           <label htmlFor="name">Name:</label>
           <input type="text" name="name" id="name" />
@@ -25,10 +18,7 @@ const FormTemp = () => {
           <br />
           <textarea name="comments" id="comments"></textarea>
         </p>
-        <div data-netlify-recaptcha="true"></div>
-        <p>
-          <input type="submit" />
-        </p>
+        <button type="submit">Send</button>
       </form>
     </div>
   )
