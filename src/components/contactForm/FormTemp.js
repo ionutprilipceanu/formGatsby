@@ -21,7 +21,7 @@ const FormTemp = () => {
           <input type="email" name="email" id="email" />
         </p>
         <p>
-          <label htmlFor="comments">Comments:</label>
+          <label htmlFor="comments">Comment:</label>
           <br />
           <textarea name="comments" id="comments"></textarea>
         </p>
