@@ -6,7 +6,7 @@ const FormTemp = () => {
       <form
         method="post"
         name="Contact Form 2"
-        action="/thankyou.html"
+        action="/thank-you"
         data-netlify-recaptcha="true"
         netlify-honeypot="hpfield"
         data-netlify="true"
