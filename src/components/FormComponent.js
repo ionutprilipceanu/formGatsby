@@ -1,21 +1,9 @@
 import React from "react"
 
 const FormComponent = () => {
-  const handlesubmit = () => {
-    console.log("click")
-  }
   return (
     <div>
-      <form
-        method="POST"
-        name="contact"
-        // action="/thankyou.html"
-        // data-netlify-recaptcha="true"
-        netlify-honeypot="bot-field"
-        data-netlify="true"
-        onSubmit={handlesubmit}
-      >
-        <input type="hidden" name="bot-field" />
+      <form method="POST" name="contact" action="" data-netlify="true">
         <div>
           <label htmlFor="name">Name:</label>
           <input type="text" name="name" id="name" />
@@ -29,8 +17,8 @@ const FormComponent = () => {
           <br />
           <textarea name="comments" id="comments"></textarea>
         </div>
+        <input type="submit" value="submit" />
         <div data-netlify-recaptcha="true"></div>
-        <button type="submit">Send</button>
       </form>
     </div>
   )
