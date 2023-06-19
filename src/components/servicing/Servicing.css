@@ -1,0 +1,44 @@
+.service-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-scris h1 {
+  width: 75%;
+  margin-left: 6.5%;
+  color: rgb(0, 0, 0, 0.6);
+  font-size: 180%;
+  padding: 1%;
+  z-index: -1;
+  padding-top: 2.5%;
+}
+
+.service-scris p {
+  width: 85%;
+  padding: 1%;
+  margin-left: 6.5%;
+  color: rgb(0, 0, 0, 0.6);
+  font-size: 120%;
+  text-align: justify;
+  z-index: -1;
+}
+
+.service-scris {
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgba(238, 238, 238, 0.25);
+  margin-bottom: 1rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.service-scris > p {
+  text-indent: 20px;
+}
+
+@media (max-width: 992px) {
+  .service-scris {
+    width: 96%;
+  }
+}
