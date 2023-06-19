@@ -1,0 +1,91 @@
+.intro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scris h1 {
+  font-family: "Times New Roman", Times, serif;
+  width: 75%;
+  margin-left: 6.5%;
+  color: rgb(0, 0, 0, 0.6);
+  font-size: 180%;
+  padding: 1%;
+  z-index: -1;
+  padding-top: 2.5%;
+}
+
+.scris p {
+  font-family: "Times New Roman", Times, serif;
+  width: 85%;
+  padding: 1%;
+  margin-left: 6.5%;
+  color: rgb(0, 0, 0, 0.6);
+  font-size: 120%;
+  text-align: justify;
+  z-index: -1;
+}
+
+.scris {
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgba(238, 238, 238, 0.25);
+  animation-name: myanimation;
+  animation-duration: 3s;
+}
+
+@keyframes myanimation {
+  0% {
+    top: -370px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  background-color: rgba(238, 238, 238, 0.4);
+  border-radius: 0 0 10px 10px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.poze {
+  border-radius: 4px;
+  transition: 1s;
+  padding: 5px;
+  margin: 0.5%;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.poze:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.scris > p {
+  text-indent: 20px;
+}
+
+@media (max-width: 992px) {
+  .scris {
+    width: 96%;
+  }
+
+  .box {
+    width: 96%;
+    padding: 0.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .box {
+    flex-direction: column;
+    width: 96%;
+  }
+}
