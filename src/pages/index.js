@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useEffect } from "react"
 
 import Home from "./Home"
 import Seo from "../components/seo"
