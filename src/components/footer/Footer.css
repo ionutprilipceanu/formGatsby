@@ -1,0 +1,168 @@
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: content-box;
+  width: 100%;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ccc;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-social a:hover {
+  color: #ccc;
+}
+
+.documentatie {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: small;
+}
+
+.scris_sus {
+  display: flex;
+  flex-direction: row;
+  padding-left: 2%;
+  list-style: none;
+}
+
+.scris_sus li,
+.scris_jos li {
+  margin-left: 5px;
+}
+
+.scris_jos {
+  display: flex;
+  flex-direction: row;
+  padding-left: 2%;
+  list-style: none;
+}
+
+.scris_jos,
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.scris_jos a:hover {
+  opacity: 0.75;
+  color: white;
+}
+
+.scris_sus .location {
+  display: none;
+}
+
+.arrowUp {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: x-large;
+  color: #fff;
+}
+
+.arrowUp {
+  -webkit-animation: upNdown 2s infinite linear;
+  animation: upNdown 2s infinite linear;
+}
+@-webkit-keyframes upNdown {
+  0% {
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+  }
+}
+@keyframes upNdown {
+  0% {
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .bara {
+    display: none;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+  }
+
+  .footer-links {
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 5px;
+  }
+
+  .footer-social {
+    margin-top: 0;
+  }
+
+  .footer-social a {
+    font-size: 16px;
+    margin: 0 25px 15px 25px;
+  }
+
+  .scris_sus {
+    flex-direction: column;
+  }
+
+  .scris_jos {
+    justify-content: space-between !important;
+    /* align-items: center; */
+    padding: 0;
+    margin: 0;
+  }
+
+  .scris_sus .location {
+    display: contents;
+  }
+
+  .scris_jos .location {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .arrowUp {
+    font-size: large;
+  }
+}

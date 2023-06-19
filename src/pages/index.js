@@ -1,9 +1,9 @@
 import * as React from "react"
 
-import Layout from "../components/layout"
+import Home from "./Home"
 import Seo from "../components/seo"
 
-const IndexPage = () => <Layout></Layout>
+const IndexPage = () => <Home />
 
 export const Head = () => <Seo title="Home" />
 

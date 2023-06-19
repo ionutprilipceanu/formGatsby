@@ -1,4 +1,5 @@
 import React from "react"
+import Button from "react-bootstrap/Button"
 
 const FormTemp = () => {
   return (
@@ -18,7 +19,9 @@ const FormTemp = () => {
           <br />
           <textarea name="comments" id="comments"></textarea>
         </p>
-        <button type="submit">Send</button>
+        <Button type="submit" variant="dark">
+          Send
+        </Button>
       </form>
     </div>
   )
