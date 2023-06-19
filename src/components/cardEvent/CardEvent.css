@@ -1,0 +1,24 @@
+.containerPortfolio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3.55rem auto;
+}
+
+.card {
+  margin: 1rem;
+  width: 21rem;
+}
+
+.card-text {
+  text-indent: 20px;
+}
+
+@media (max-width: 750px) {
+  .card {
+    width: auto;
+    margin: 1rem;
+  }
+}
